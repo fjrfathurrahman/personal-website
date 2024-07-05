@@ -1,0 +1,1 @@
+// An index.tsx file at the root of the components folder to export all components from a single point, making imports cleaner.
