@@ -1,8 +1,6 @@
-import { Box, Button, Flex, IconButton, Image, Text, Tooltip, } from "@chakra-ui/react";
-import Section from "../Components/templates/Section";
+import { Box, Button, Flex, IconButton, Image, Text, } from "@chakra-ui/react";
 import heroImage from "../Assets/Profile.png";
-import { PiArrowElbowRightBold } from "react-icons/pi";
-import { LuDownload } from "react-icons/lu";
+import { Icons, Section } from "../Components";
 
 function Br() {
     return <Box as="br" display={{ base: 'none', lg: 'block' }} />
@@ -33,9 +31,9 @@ export default function Hero() {
                     <Text as={'h1'} sx={headlineStyle}>FrontEnd & <br /> Designer Web.</Text>
                     <Text as={'p'}>Designing Robust Frontend Applications that Deliver <Br /> Outstanding User Experiences.</Text>
                     <Flex mt={3} flexDirection={'row'} alignItems={'center'} justifyContent={'center'} gap={3}>
-                        <Button rightIcon={<PiArrowElbowRightBold size={23} />}>READ MORE</Button>
+                        <Button rightIcon={<Icons.arrowRight size={23} />}>READ MORE</Button>
                         <Button display={{ base: 'none', md: 'block' }} variant='ghost'>DOWNLOAD CV</Button>
-                        <IconButton aria-label="Download CV" display={{ base: 'block', md: 'none' }} icon={<LuDownload size={26} />} variant={'none'} />
+                        <IconButton aria-label="Download CV" display={{ base: 'block', md: 'none' }} icon={<Icons.download size={26} />} variant={'none'} />
                     </Flex>
                 </Flex>
 

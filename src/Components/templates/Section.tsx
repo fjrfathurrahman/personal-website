@@ -19,7 +19,7 @@ export default function Section({ children, w = '1024px', h = 'max-content', ...
         margin: 'auto',
         padding: {
             base: '70px 24px',
-            md: '100px 32px'
+            md: '150px 32px'
         },
         borderBottom: '1px',
         borderBottomColor: 'gray.600',

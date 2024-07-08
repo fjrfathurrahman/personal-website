@@ -15,7 +15,7 @@ const mySelf : string[] = [
     "My interest in web development and design started to grow when I entered vocational school. I started learning about HTML CSS, and JavaScript, and became more interested when I saw how code could be transformed into visually appealing displays. I've worked with frameworks like React.js to create interactive web applications. I've also been learning about web performance optimization, ensuring that the sites I create are not only visually appealing but also fast and efficient."
 ]
 
-const stack : { name: string, icon: string }[] = [
+const myStack : { name: string, icon: string }[] = [
     {
         name: "HTML",
         icon: iconHtml,
@@ -62,4 +62,4 @@ const stack : { name: string, icon: string }[] = [
     },
 ]
 
-export  { mySelf, stack }
+export default { mySelf, myStack }

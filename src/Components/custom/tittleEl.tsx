@@ -19,4 +19,4 @@ const TittleEl = ({ tittle, subTittle, ...props } : TittleProps) => {
     )
 }
 
-export default TittleEl
+export default TittleEl;
