@@ -9,7 +9,7 @@ export default function About() {
             <Box maxW={'1024px'} mx={'auto'} display={'flex'} flexDirection={'column'} gap={6}>
 
                 <div>
-                    <TittleEl tittle="About me." subTittle="Short story about me" />
+                    <TittleEl.Tittle tittle="About me." subTittle="Short story about me" />
                     {personalDetails.mySelf.map(text => (
                         <Text as={'p'} color='paragraphLight' mb={3} key={text}>
                             <Highlight query={'Fajar Fathurrahman'} styles={{ fontWeight: '600' }}>
@@ -20,12 +20,12 @@ export default function About() {
                 </div>
 
                 <div>
-                    <TittleEl tittle="My stack." subTittle="Here is my toolbelt for success." />
-                    <Flex wrap={'wrap'} gap={3}>
+                    <TittleEl.Tittle tittle="My stack." subTittle="Here is my toolbelt for success." />
+                    <Flex wrap={'wrap'} gap={3} justifyContent={'flex-start'}>
                         {personalDetails.myStack.map(item =>
                             isMobile === true ?
                                 <Tooltip key={item.name} label={item.name} placement='top' bg={'primary.500'} color={'secondary.300'} borderRadius={'25px'} px={3}>
-                                    <Img src={item.icon} alt={item.name} width={10} />
+                                    <Img src={item.icon} alt={item.name} width={9} />
                                 </Tooltip>
                                 :
                                 <Flex key={item.name} display={{ base: 'flex', md: 'flex' }} alignItems={'center'} gap={2} px={3} py={1.5} border='1px' borderColor={'blackAlpha.200'} borderRadius={'12px'}>

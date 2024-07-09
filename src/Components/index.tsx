@@ -7,6 +7,7 @@ export { default as RootLayouts } from './layouts/RootLayouts';
 // constants
 export { default as personalDetails } from './constants/personalDetails';
 export { default as Icons } from './constants/icons';
+export { default as projectsInfo } from './constants/projectsInfo'
 
 // components & elements
 export { default as TittleEl } from './custom/tittleEl';
