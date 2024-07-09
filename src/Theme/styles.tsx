@@ -31,6 +31,14 @@ const Styles = {
                 base: '0.01em',
                 md: '0.03em',
             }
+        },
+        h1: {
+            fontWeight: '700',
+            fontSize: { base: '3xl', md: '4xl' },
+        },
+        h2: {
+            fontWeight: '600',
+            fontSize: { base: 'xl', md: '2xl' },
         }
     },
 }

@@ -31,7 +31,7 @@ export default function Hero() {
                     <Text as={'h1'} sx={headlineStyle}>FrontEnd & <br /> Designer Web.</Text>
                     <Text as={'p'}>Designing Robust Frontend Applications that Deliver <Br /> Outstanding User Experiences.</Text>
                     <Flex mt={3} flexDirection={'row'} alignItems={'center'} justifyContent={'center'} gap={3}>
-                        <Button rightIcon={<Icons.arrowRight size={23} />}>READ MORE</Button>
+                        <Button rightIcon={<Icons.arrowRight size={23} />} variant='primary'>READ MORE</Button>
                         <Button display={{ base: 'none', md: 'block' }} variant='ghost'>DOWNLOAD CV</Button>
                         <IconButton aria-label="Download CV" display={{ base: 'block', md: 'none' }} icon={<Icons.download size={26} />} variant={'none'} />
                     </Flex>

@@ -18,7 +18,6 @@ const Button = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     primary: {
-      p: '28px',
       border: '2px',
       borderColor: 'primary.500',
       color: 'primary.500',
@@ -31,7 +30,7 @@ const Button = {
       _hover: {
         borderColor: 'primary.600',
       },
-    }
+    },
   },
 
   // default values for 'size', 'variant' and 'colorScheme'
@@ -40,7 +39,7 @@ const Button = {
       base: "sm",
       lg: "lg",
     },
-    variant: 'primary',
+    variant: 'outline',
     colorScheme: '',
   },
 };
