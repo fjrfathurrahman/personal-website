@@ -1,8 +1,8 @@
-import { Box, Flex, Highlight, Img, Text, Tooltip, useBreakpointValue } from "@chakra-ui/react";
-import { Section, TittleEl, personalDetails } from "../Components";
+import { Box, Flex, Highlight, Img, Text, Tooltip } from "@chakra-ui/react";
+import { Section, TittleEl, personalDetails, useIsMobile } from "../Components";
 
 export default function About() {
-    const isMobile = useBreakpointValue({ base: true, md: false })
+    const isMobileView = useIsMobile();
 
     return (
         <Section w="100%" bg='main'>
@@ -23,7 +23,7 @@ export default function About() {
                     <TittleEl.Tittle tittle="My stack." subTittle="Here is my toolbelt for success." />
                     <Flex wrap={'wrap'} gap={3} justifyContent={'flex-start'}>
                         {personalDetails.myStack.map(item =>
-                            isMobile === true ?
+                            isMobileView ?
                                 <Tooltip key={item.name} label={item.name} placement='top' bg={'primary.500'} color={'secondary.300'} borderRadius={'25px'} px={3}>
                                     <Img src={item.icon} alt={item.name} width={9} />
                                 </Tooltip>

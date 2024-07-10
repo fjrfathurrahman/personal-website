@@ -13,3 +13,7 @@ export { default as projectsInfo } from './constants/projectsInfo'
 export { default as TittleEl } from './custom/tittleEl';
 
 // utility
+export { default as useIsMobile } from '../Hooks/useMediaQuery';
+
+// pages
+export { default as Hero } from '../Pages/hero';
