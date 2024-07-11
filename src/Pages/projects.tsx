@@ -1,7 +1,7 @@
 import { Box, Flex, Img, Link, Text } from "@chakra-ui/react";
 import { Icons, Section, TittleEl, projectsInfo, useIsMobile } from "../Components";
 
-export default function Projects() {
+export default function ProjectsSection() {
     const isMobileView = useIsMobile();
 
     return (

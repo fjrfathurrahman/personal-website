@@ -21,7 +21,7 @@ const headlineStyle = {
     },
 }
 
-export default function Hero() {
+export default function HeroSection() {
     return (
         <Section h="700px">
             <Flex flexDirection={{ base: 'column', md: 'row' }} alignItems={'center'} justifyContent={'space-between'} gap={{ base: 12, md: 6 }}>

@@ -1,7 +1,7 @@
 import { Box, Flex, Highlight, Img, Text, Tooltip } from "@chakra-ui/react";
 import { Section, TittleEl, personalDetails, useIsMobile } from "../Components";
 
-export default function About() {
+export default function AboutSection() {
     const isMobileView = useIsMobile();
 
     return (

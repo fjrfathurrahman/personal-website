@@ -8,6 +8,7 @@ export { default as RootLayouts } from './layouts/RootLayouts';
 export { default as personalDetails } from './constants/personalDetails';
 export { default as Icons } from './constants/icons';
 export { default as projectsInfo } from './constants/projectsInfo'
+export { default as contactForm } from './constants/formContact';
 
 // components & elements
 export { default as TittleEl } from './custom/tittleEl';
@@ -15,5 +16,8 @@ export { default as TittleEl } from './custom/tittleEl';
 // utility
 export { default as useIsMobile } from '../Hooks/useMediaQuery';
 
-// pages
+// section export
 export { default as Hero } from '../Pages/hero';
+export { default as About } from '../Pages/about';
+export { default as Projects } from '../Pages/projects';
+export { default as Contact } from '../Pages/contact';
