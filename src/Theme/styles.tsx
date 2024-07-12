@@ -39,7 +39,11 @@ const Styles = {
         h2: {
             fontWeight: '600',
             fontSize: { base: 'xl', md: '2xl' },
-        }
+        },
+        h4: {
+            fontWeight: '600',
+            fontSize: { base: 'md', md: 'lg' },
+        },
     },
 }
 

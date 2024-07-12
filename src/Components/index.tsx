@@ -3,6 +3,7 @@
 // template and layouts
 export { default as Section } from './templates/Section';
 export { default as RootLayouts } from './layouts/RootLayouts';
+export { default as Footer } from './layouts/footer';
 
 // constants
 export { default as personalDetails } from './constants/personalDetails';

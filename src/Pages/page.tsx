@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Projects } from "../Components";
+import { About, Contact, Footer, Hero, Projects } from "../Components";
 import RootLayouts from "../Components/layouts/RootLayouts";
 
 export default function Home() {
@@ -8,6 +8,7 @@ export default function Home() {
             <About/>
             <Projects/>
             <Contact/>
+            <Footer/>
         </RootLayouts>
     )
 }

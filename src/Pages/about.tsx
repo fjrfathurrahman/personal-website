@@ -5,7 +5,7 @@ export default function AboutSection() {
     const isMobileView = useIsMobile();
 
     return (
-        <Section w="100%" bg='main'>
+        <Section w="100%" bg='main' id='about'>
             <Box maxW={'1024px'} mx={'auto'} display={'flex'} flexDirection={'column'} gap={6}>
 
                 <div>
