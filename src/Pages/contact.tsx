@@ -37,7 +37,7 @@ const FormFields = ({ formField }: { formField: any }) => {
     return (
         <VStack spacing={3} mb={6}>
             {contactFormFields.map(item => (
-                <FormControl id={item.name} isRequired>
+                <FormControl id={item.name} isRequired key={item.name}>
                     <FormLabel>{item.label}</FormLabel>
                     <Input {...formField(item.name, { required: true })} placeholder={item.placeholder} />
                 </FormControl>

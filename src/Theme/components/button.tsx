@@ -9,6 +9,8 @@ const Button = {
   sizes: {
     sm: {
       fontSize: "sm",
+      px: 4,
+      py: 6, 
     },
     lg: {
       fontSize: "md",
@@ -18,6 +20,8 @@ const Button = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     primary: {
+      paddingX: 6, // horizontal padding
+      paddingY: 3, // vertical padding
       border: '2px',
       borderColor: 'primary.500',
       color: 'primary.500',

@@ -1,6 +1,7 @@
-import { Box, Button, Flex, IconButton, Image, Text, } from "@chakra-ui/react";
+import { Box, Button, Flex, Icon, Image, Text, } from "@chakra-ui/react";
 import heroImage from "../../public/Profile.png";
-import { Icons, Section } from "../Components";
+import { Icons, Section, useIsMobile } from "../Components";
+import { motion } from "framer-motion";
 
 function Br() {
     return <Box as="br" display={{ base: 'none', lg: 'block' }} />
@@ -21,23 +22,53 @@ const headlineStyle = {
     },
 }
 
+const container = {
+    visible: {
+        transition: {
+            staggerChildren: 0.3
+        }
+    }
+}
+
+const item = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: 'spring',
+            stiffness: 140,
+        }
+    }
+}
+
+const MotionBox = motion(Box);
+const MotionText = motion(Text);
+const MotionFlex = motion(Flex);
+const MotionButton = motion(Button);
+
 export default function HeroSection() {
+    const isMobile = useIsMobile();
+
     return (
         <Section h="700px">
             <Flex flexDirection={{ base: 'column', md: 'row' }} alignItems={'center'} justifyContent={'space-between'} gap={{ base: 12, md: 6 }}>
 
                 {/* Hero Text */}
-                <Flex flexDirection={'column'} alignItems={{ base: 'center', md: 'flex-start' }} gap={6} textAlign={{ base: 'center', md: 'left' }}>
-                    <Text as={'h1'} sx={headlineStyle}>FrontEnd & <br /> Designer Web.</Text>
-                    <Text as={'p'}>Designing Robust Frontend Applications that Deliver <Br /> Outstanding User Experiences.</Text>
+                <MotionFlex variants={container} initial="hidden" animate="visible" flexDirection={'column'} alignItems={{ base: 'center', md: 'flex-start' }} gap={6} textAlign={{ base: 'center', md: 'left' }}>
+                    <MotionText variants={item} as={'h1'} sx={headlineStyle}>FrontEnd & <br /> Designer Web.</MotionText>
+                    <MotionText variants={item} as={'p'}>Designing Robust Frontend Applications that Deliver <Br /> Outstanding User Experiences.</MotionText>
                     <Flex mt={3} flexDirection={'row'} alignItems={'center'} justifyContent={'center'} gap={3}>
-                        <Button rightIcon={<Icons.arrowRight size={23} />} variant='primary'>
+                        <MotionButton variants={item} rightIcon={<Icons.arrowRight size={22} />} variant='primary'>
                             <a href="#about">READ MORE</a>
-                        </Button>
-                        <Button display={{ base: 'none', md: 'block' }} variant='ghost'>DOWNLOAD CV</Button>
-                        <IconButton aria-label="Download CV" display={{ base: 'block', md: 'none' }} icon={<Icons.download size={26} />} variant={'none'} />
+                        </MotionButton>
+                        {isMobile ?
+                            <MotionButton variants={item} variant={'none'}><Icons.download size={20} /></MotionButton>
+                            :
+                            <MotionButton variants={item} variant='ghost'>DOWNLOAD CV</MotionButton>
+                        }
                     </Flex>
-                </Flex>
+                </MotionFlex>
 
                 {/* Hero Image */}
                 <Image src={heroImage} alt="Hero Image" width={{ base: '230px', sm: '270px', md: '250px', lg: '300px' }} />
