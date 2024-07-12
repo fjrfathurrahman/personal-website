@@ -1,6 +1,6 @@
 import { Box, Button, FormControl, FormLabel, Input, Spinner, Textarea, VStack } from "@chakra-ui/react";
 import { Section, TittleEl, useIsMobile } from "../Components";
-import { useContactForm } from "../Hooks/useContactForm";
+import { useContactForm } from "../Lib/hooks/useContactForm";
 import contactFormFields from "../Components/constants/formContact";
 
 export default function ContactSection() {

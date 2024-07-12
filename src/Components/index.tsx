@@ -14,7 +14,7 @@ export { default as contactForm } from './constants/formContact';
 export { default as TittleEl } from './custom/tittleEl';
 
 // utility
-export { default as useIsMobile } from '../Hooks/useMediaQuery';
+export { default as useIsMobile } from '../Lib/hooks/useMediaQuery';
 
 // section export
 export { default as Hero } from '../Pages/hero';
