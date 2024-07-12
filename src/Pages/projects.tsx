@@ -8,7 +8,7 @@ export default function ProjectsSection() {
         <Section>
             <TittleEl.tittleShape tittle="My Projects" subTittle="Here are the projects that I have worked on" />
 
-            <Flex w={'full'} mt={12} px={{base: 3, md: 6}}>
+            <Flex w={'full'} mt={16} px={{base: 3, md: 6}}>
                 {projectsInfo.map(project => (
                     <Box key={project.id}>
                         <Img src={project.img} alt={project.alt} border={'2px'} borderRadius={'12px'} />
@@ -16,10 +16,10 @@ export default function ProjectsSection() {
                             <Text as={'h2'}>{project.name}</Text>
                             <Flex gap={3}>
                                 <Link href={project.link.github} target={project.link.target} rel={project.link.rel}>
-                                    <Icons.github size={isMobileView === true ? 24 : 28} />
+                                    <Icons.github size={isMobileView === true ? 20 : 28} />
                                 </Link>
                                 <Link href={project.link.live} target={project.link.target} rel={project.link.rel}>
-                                    <Icons.externalLink size={isMobileView === true ? 22 : 26} />
+                                    <Icons.externalLink size={isMobileView === true ? 18 : 26} />
                                 </Link>
                             </Flex>
                         </Flex>
