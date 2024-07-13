@@ -8,7 +8,7 @@ export default function ContactSection() {
     const isMobile = useIsMobile()
 
     return (
-        <Section>
+        <Section id="contact">
             <TittleEl.tittleShape tittle="Contact Me" subTittle="If you are interested in me, contact me now!" />
 
             <Box position={'relative'} w={{ base: 'full', md: '80%' }} p={[5, 7]} mt={16} mx={'auto'} rounded={'2xl'} bg={'main'} color={'#030712'}>

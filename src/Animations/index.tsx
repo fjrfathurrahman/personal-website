@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 // Variabel untuk animasi dengan Framer Motion
@@ -6,9 +6,10 @@ const MotionBox = motion(Box);
 const MotionText = motion(Text);
 const MotionFlex = motion(Flex);
 const MotionButton = motion(Button);
+const MotionImg = motion(Image);
 
 export default MotionBox;
-export { MotionText, MotionFlex, MotionButton };
+export { MotionText, MotionFlex, MotionButton, MotionImg };
 
 const containerVariant = {
     visible: {

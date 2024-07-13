@@ -1,1 +1,25 @@
-NOTE : Perbaiki Section Hero and About
+// Message commit
+
+1. Menambahkan Fitur atau Fungsi Baru:
+feat: add centered box component with flexbox styling
+
+2. Memperbaiki Bug:
+fix: correct image positioning in centered box component
+
+3. Menambah atau Memperbarui Dokumentasi:
+docs: add usage example for centered box component
+
+4. Refaktor Kode:
+refactor: clean up and optimize centered box component styling
+
+5. Menambah atau Memperbarui Tes:
+test: add unit tests for centered box component
+
+6. Memperbarui Dependensi:
+chore: update project dependencies to latest versions
+
+7. Menghapus Kode yang Tidak Terpakai atau Tidak Diperlukan:
+chore: remove unused imports from centered box component
+
+8. Memperbaiki Format atau Tata Letak Kode:
+style: format centered box component code for better readability

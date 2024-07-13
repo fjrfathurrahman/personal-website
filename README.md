@@ -1,30 +1,32 @@
-# React + TypeScript + Vite
+# Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal website! This project is the result of my journey in learning React.js. This website is still in the development stage and still has many shortcomings. I would love your feedback and suggestions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: Ensures optimal viewing experience across a wide range of devices.
+- **Animated Transitions**: Smooth transitions and animations using Framer Motion.
+- **Portfolio Showcase**: Displays my projects, skills, and contact.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React (TypeScript)
+- Chakra UI
+- Framer Motion
+- React Router (if applicable)
+- Other libraries and tools as needed
 
-- Configure the top-level `parserOptions` property like this:
+## Instalasi
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone repositori ini
+   ```sh
+   git clone https://github.com/fjrfathurrahman/personal-website.git
+2. Masuk ke direktori proyek
+   ```sh
+   cd first-portfolio
+3. Instalasi dependencies
+   ```sh
+   npm install 
+   npm run
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+I would appreciate your feedback to improve these shortcomings.

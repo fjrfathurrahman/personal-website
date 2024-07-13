@@ -20,7 +20,7 @@ export default function HeroSection() {
     const isMobile = useIsMobile();
 
     return (
-        <Section h="700px" id="hero">
+        <Section h="750px" id="hero">
             <Flex sx={flexStyle}>
 
                 <HeroText />
