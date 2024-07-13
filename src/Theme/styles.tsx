@@ -32,6 +32,7 @@ const Styles = {
                 md: '0.03em',
             }
         },
+
         h1: {
             fontWeight: '700',
             fontSize: { base: '3xl', md: '4xl' },
@@ -44,6 +45,25 @@ const Styles = {
             fontWeight: '600',
             fontSize: { base: 'md', md: 'lg' },
         },
+
+        // Components Style
+        '.headlineStyle': {
+            color: 'secondary.500',
+            fontWeight: '800',
+            fontSize: {
+                base: '4xl',
+                md: '5xl',
+                lg: '6xl',
+            },
+            lineHeight: {
+                base: '40px',
+                md: '52px',
+                lg: '70px',
+            },
+        },
+        '.heroImage': {
+            width: { base: '230px', sm: '270px', md: '250px', lg: '300px' }
+        }
     },
 }
 

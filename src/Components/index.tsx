@@ -22,3 +22,6 @@ export { default as Hero } from '../Pages/hero';
 export { default as About } from '../Pages/about';
 export { default as Projects } from '../Pages/projects';
 export { default as Contact } from '../Pages/contact';
+
+// animations
+export { default as MotionBox } from '../Animations/index.tsx';

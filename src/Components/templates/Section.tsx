@@ -21,8 +21,8 @@ export default function Section({ children, w = '1024px', h = 'max-content', ...
             base: '70px 24px',
             md: '150px 32px'
         },
-        borderBottom: '1px',
-        borderBottomColor: 'gray.600',
+        // borderBottom: '1px',
+        // borderBottomColor: 'gray.600',
     }
 
     return (
